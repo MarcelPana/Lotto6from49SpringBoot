@@ -19,6 +19,8 @@ public class ExtractedNumbers {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer extractedNumbersId;
     @Column
+    private String extractedNumbers;
+    @Column
     private Date extractionDate;
 
 
