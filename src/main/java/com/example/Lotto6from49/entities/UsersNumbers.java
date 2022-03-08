@@ -14,10 +14,26 @@ import java.sql.Date;
 @NoArgsConstructor
 public class UsersNumbers {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer extractedUserNumbersId;
     @Column
     private Date extractionDate;
 
+    public Integer getExtractedUserNumbersId() {
+        return extractedUserNumbersId;
+    }
+
+    public void setExtractedUserNumbersId(Integer extractedUserNumbersId) {
+        this.extractedUserNumbersId = extractedUserNumbersId;
+    }
+
+    public Date getExtractionDate() {
+        return extractionDate;
+    }
+
+    public void setExtractionDate(Date extractionDate) {
+        this.extractionDate = extractionDate;
+    }
 }

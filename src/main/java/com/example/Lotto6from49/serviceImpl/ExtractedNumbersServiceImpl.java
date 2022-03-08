@@ -10,6 +10,7 @@ import java.util.Optional;
 
 @Service
 public class ExtractedNumbersServiceImpl implements ExtractedNumbersService {
+
     private final ExtractedNumbersRepository extractedNumbersRepository;
 
     public ExtractedNumbersServiceImpl(ExtractedNumbersRepository extractedNumbersRepository) {
@@ -20,8 +21,9 @@ public class ExtractedNumbersServiceImpl implements ExtractedNumbersService {
     public List<ExtractedNumbers> findAllExtractedNumbers() { return extractedNumbersRepository.findAll() ; }
 
     @Override
-    public ExtractedNumbers saveExtractedNumbers(ExtractedNumbers extractedNumbers)
-    { return extractedNumbersRepository.save(extractedNumbers); }
+    public ExtractedNumbers addExtractedNumbers(ExtractedNumbers extractedNumbers) {
+        return extractedNumbersRepository.save(extractedNumbers);
+    }
 
     @Override
     public Optional<ExtractedNumbers> findByIdExtractedNumbers(Integer extractedNumbersId) {
