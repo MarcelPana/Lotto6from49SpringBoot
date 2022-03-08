@@ -3,12 +3,14 @@ package com.example.Lotto6from49.conrollers;
 import com.example.Lotto6from49.entities.ExtractedNumbers;
 import com.example.Lotto6from49.service.ExtractedNumbersService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
 @RequestMapping("/api")
 @RestController
+
 public class ExtractedNumbersController {
 
     private final ExtractedNumbersService extractedNumbersService;
@@ -20,12 +22,12 @@ public class ExtractedNumbersController {
 
     @PostMapping("/addExtractedNumbers")
     public ExtractedNumbers addExtractedNumbers(@RequestBody ExtractedNumbers extractedNumbers) {
-        return extractedNumbersService.saveExtractedNumbers(extractedNumbers);
+        return extractedNumbersService.addExtractedNumbers(extractedNumbers);
     }
 
 
     @GetMapping("/findAllExtractedNumbers")
-    public List<ExtractedNumbers> findAllActivities() {
+    public List<ExtractedNumbers> findAllExtractedNumbers() {
         return extractedNumbersService.findAllExtractedNumbers();
     }
 
@@ -35,17 +37,16 @@ public class ExtractedNumbersController {
     }
 
     @PutMapping("/updateExtractedNumbers/{id}")
-    public ExtractedNumbers updateProduct(@PathVariable("id") Integer id, @RequestBody ExtractedNumbers extractedNumbers) {
+    public ExtractedNumbers updateExtractedNumbers(@PathVariable("id") Integer id, @RequestBody ExtractedNumbers extractedNumbers) {
         Optional<ExtractedNumbers> extractedNumbersFromDatabase = extractedNumbersService.findByIdExtractedNumbers(id);
         if (extractedNumbersFromDatabase.isPresent()) {
-            extractedNumbersFromDatabase.get().setExtractedNumbersId(extractedNumbers.getExtractedNumbersId());
             extractedNumbersFromDatabase.get().setExtractedNumbers(extractedNumbers.getExtractedNumbers());
             extractedNumbersFromDatabase.get().setExtractionDate(extractedNumbers.getExtractionDate());
-            final ExtractedNumbers updatedExtractedNumbers = extractedNumbersService.saveExtractedNumbers(extractedNumbersFromDatabase.get());
+            final ExtractedNumbers updatedExtractedNumbers = extractedNumbersService.addExtractedNumbers(extractedNumbersFromDatabase.get());
 
             return updatedExtractedNumbers;
-        }return extractedNumbersService.saveExtractedNumbers(extractedNumbers);
-
+        }
+        return extractedNumbersService.addExtractedNumbers(extractedNumbers);
     }
 
     @DeleteMapping("/deleteExtractedNumbersById/{id}")
