@@ -5,6 +5,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @Table( name = "extracted_numbers")
@@ -21,4 +23,6 @@ public class ExtractedNumbers {
     @Column (name = "extraction_date")
     private String extractionDate;
 
+
 }
+
