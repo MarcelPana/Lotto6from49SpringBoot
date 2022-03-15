@@ -10,7 +10,6 @@ import java.util.List;
 import java.util.Optional;
 @RequestMapping("/api")
 @RestController
-
 public class ExtractedNumbersController {
 
     private final ExtractedNumbersService extractedNumbersService;

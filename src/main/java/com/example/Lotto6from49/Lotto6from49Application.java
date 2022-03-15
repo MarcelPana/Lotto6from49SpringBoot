@@ -9,16 +9,25 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import static com.example.Lotto6from49.entities.Lotto6From49.creatingFile;
+
 @SpringBootApplication
 public class Lotto6from49Application {
 
     public static void main(String[] args) throws IOException { SpringApplication.run(Lotto6from49Application.class, args);
 
-        Lotto6From49.creatingFile();
+        creatingFile();
         Lotto6From49.addUser();
         Lotto6From49.readingUsers();
         Lotto6From49.playARound();
+
     }
+
+
+
+
+
+
 }
 
 
