@@ -18,7 +18,8 @@ public class ExtractedNumbersServiceImpl implements ExtractedNumbersService {
     }
 
     @Override
-    public List<ExtractedNumbers> findAllExtractedNumbers() { return extractedNumbersRepository.findAll() ; }
+    public List<ExtractedNumbers> findAllExtractedNumbers() {
+        return extractedNumbersRepository.findAll() ; }
 
     @Override
     public ExtractedNumbers addExtractedNumbers(ExtractedNumbers extractedNumbers) {
@@ -38,5 +39,6 @@ public class ExtractedNumbersServiceImpl implements ExtractedNumbersService {
     @Override
     public void deleteExtractedNumbers(Integer extractedNumbersId) {
 extractedNumbersRepository.deleteById(extractedNumbersId);
+
     }
 }
