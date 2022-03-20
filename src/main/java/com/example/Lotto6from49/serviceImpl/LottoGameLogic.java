@@ -5,7 +5,6 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.io.File;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -32,7 +31,7 @@ public class LottoGameLogic extends Thread{
 
     @Autowired
     public LottoGameLogic(AddToDataBase addToDataBase) {
-        this.addToDataBase = addToDataBase;
+        LottoGameLogic.addToDataBase = addToDataBase;
     }
 
 
@@ -81,7 +80,7 @@ public class LottoGameLogic extends Thread{
 // Check the numbers
             System.out.println();
             System.out.println();
-            // ArrayList<Integer> guessedNumbers = new ArrayList<>();
+
             for (int s : userNumbers) {
                 for (int l : luckyNumbers) {
                     if (s == l) {
@@ -89,7 +88,7 @@ public class LottoGameLogic extends Thread{
                     }
                 }
             }
-            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MMM-YYYY; hh:mm;");
+
             System.out.println("Your chosen numbers are: " + userNumbers);
             System.out.println("The lucky numbers are:   " + luckyNumbers);
             System.out.println("The guessed numbers are: " + guessedNumbers);
@@ -99,7 +98,6 @@ public class LottoGameLogic extends Thread{
             extractedNumbers.setExtractedNumbers(luckyNumbers.toString());
             extractedNumbers.setExtractionDate(timeNow);
             addToDataBase.addExNr(extractedNumbers);
-
 
 // Play again?
             do {
@@ -114,8 +112,5 @@ public class LottoGameLogic extends Thread{
             } while (!validInput);
         } while (keepPlaying);
         System.out.println("\nThank you for playing!");
-
-
     }
-
 }
