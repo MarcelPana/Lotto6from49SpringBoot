@@ -9,14 +9,14 @@ import org.springframework.stereotype.Service;
 @Service
 public class AddToDataBase {
 
-    ExtractedNumbersRepository extractedNumbersRepository;
+    private final ExtractedNumbersRepository extractedNumbersRepository;
 
     @Autowired
     public AddToDataBase(ExtractedNumbersRepository extractedNumbersRepository) {
         this.extractedNumbersRepository = extractedNumbersRepository;
     }
 
-    // Save lucky numbers in Database
+    // Save lucky numbers into Database
     public ExtractedNumbers addExNr(ExtractedNumbers extractedNumbers) {
         System.out.println("Database " + extractedNumbers);
         extractedNumbersRepository.save(extractedNumbers);
