@@ -1,15 +1,10 @@
 package com.example.Lotto6from49.serviceImpl;
 
-import com.example.Lotto6from49.entities.Lotto6From49;
 import lombok.Data;
 import org.springframework.stereotype.Service;
 
 import java.io.*;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Scanner;
 
 @Data
 @Service
