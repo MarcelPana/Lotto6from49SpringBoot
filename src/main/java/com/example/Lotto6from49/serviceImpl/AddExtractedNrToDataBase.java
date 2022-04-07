@@ -6,13 +6,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class AddToDataBase {
+public class AddExtractedNrToDataBase {
 
 
     private final ExtractedNumbersRepository extractedNumbersRepository;
 
     @Autowired
-    public AddToDataBase(ExtractedNumbersRepository extractedNumbersRepository) {
+    public AddExtractedNrToDataBase(ExtractedNumbersRepository extractedNumbersRepository) {
         this.extractedNumbersRepository = extractedNumbersRepository;
     }
 

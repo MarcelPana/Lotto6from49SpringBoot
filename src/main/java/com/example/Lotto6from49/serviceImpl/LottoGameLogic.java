@@ -27,10 +27,10 @@ public class LottoGameLogic extends Thread{
     static ArrayList<Integer> guessedNumbers = new ArrayList<>();
     public static ArrayList<Integer> luckyNumbers = new ArrayList<>(6);
 
-    private static AddToDataBase addToDataBase = null;
+    private static AddExtractedNrToDataBase addToDataBase = null;
 
     @Autowired
-    public LottoGameLogic(AddToDataBase addToDataBase) {
+    public LottoGameLogic(AddExtractedNrToDataBase addToDataBase) {
         LottoGameLogic.addToDataBase = addToDataBase;
     }
 

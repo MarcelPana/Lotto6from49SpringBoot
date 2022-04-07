@@ -17,23 +17,10 @@ public class UsersNumbers {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer extractedUserNumbersId;
+    private Integer UserNumbersId;
+    @Column
+    private Integer UserNumbers;
     @Column
     private Date extractionDate;
 
-    public Integer getExtractedUserNumbersId() {
-        return extractedUserNumbersId;
-    }
-
-    public void setExtractedUserNumbersId(Integer extractedUserNumbersId) {
-        this.extractedUserNumbersId = extractedUserNumbersId;
-    }
-
-    public Date getExtractionDate() {
-        return extractionDate;
-    }
-
-    public void setExtractionDate(Date extractionDate) {
-        this.extractionDate = extractionDate;
-    }
 }
