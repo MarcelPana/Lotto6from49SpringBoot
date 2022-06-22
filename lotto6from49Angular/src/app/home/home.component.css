@@ -1,0 +1,115 @@
+
+
+
+#page-title{
+  color: white;
+  width: 300px;
+  height: 35px;
+  background-color: red;
+  position: relative;
+  left: 220px;
+  padding-left: 20px;
+  animation-name: example;
+  animation-duration: 6s;
+}
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:1000px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+#the_brave_title {
+  position: absolute;
+  left: 290px;
+  top: 35px;
+  background-color: deepskyblue;
+  padding: 2px;
+
+}
+
+#the_brave_title:hover{
+  padding: 10px;
+}
+body{
+  background-color: blanchedalmond;
+}
+
+#gina-virgina{ /* de sters */
+  position: relative;
+  margin-left: 300px;
+  margin-top: 100px;
+  color: red;
+}
+#add-pamnaram{
+  position: relative;
+  margin-left: 300px;
+}
+
+#add-number{
+  position: relative;
+  margin-left: 300px;
+}
+
+
+
+.nav-menu a{
+  padding: 20px;
+  font-weight: bold;
+  font-size: 25px;
+  color: red;
+  display: list-item;
+}
+
+
+
+* {
+  box-sizing: content-box;
+  padding-left: 1px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the side navigation */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: blue;
+  overflow-x: hidden;
+
+}
+
+
+/* Side navigation links */
+.sidenav a {
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+  background-color: #ddd;
+  color: red;
+  font-style: italic;
+}
+
+:focus{
+  padding: 10px;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  margin-left: 200px;
+  padding-left: 20px;
+}

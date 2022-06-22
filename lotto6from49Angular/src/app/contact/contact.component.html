@@ -1,0 +1,18 @@
+<a href="http://localhost:4200/home">Back home</a>
+<h1>Contact</h1>
+
+<form>
+  <div class="form-group">
+    <label for="nume">Nume</label>
+    <input type="text" id="nume" name="nume" [(ngModel)]="nume" >
+  </div>
+  <div class="form-group">
+    <label for="prenume">Prenume</label>
+    <input type="text" id="prenume" name="prenume" [(ngModel)]="prenume" >
+  </div>
+  <div class="form-group">
+    <label for="mesaj">Mesaj</label>
+    <textarea name="mesaj" id="mesaj" cols="30" rows="10" [(ngModel)]="mesaj"></textarea>
+  </div>
+</form>
+<button (click)="saveMesage()">Save</button>

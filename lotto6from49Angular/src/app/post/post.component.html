@@ -1,0 +1,9 @@
+
+<div *ngFor="let post of listOfPostsFromService" >
+  <h2>{{post.title}}</h2>
+  <h4>{{post.id}}</h4>
+  <p>{{post.body}}</p>
+
+  <button (click)="handleClickOnPost(post.id)">Click and notify parent</button>
+</div>
+

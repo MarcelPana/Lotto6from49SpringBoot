@@ -4,6 +4,7 @@ import com.example.Lotto6from49.entities.ExtractedNumbers;
 import com.example.Lotto6from49.entities.UsersGuessedNumbers;
 import com.example.Lotto6from49.repositories.UsersGuessedNumbersRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 @Service

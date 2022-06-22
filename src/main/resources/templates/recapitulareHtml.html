@@ -1,0 +1,190 @@
+<!DOCTYPE html> <!-- spune browser ului ce content urmeaza sa folosiim -->
+<html lang="en"> <!-- commentated text -->
+<head><!-- configuratiile pt aplicatia noastra -->
+    <meta charset="UTF-8">
+    <title>LottoGame</title> <!-- textul de aici va fi vizibil pe tab ul din browsweul pe care l folosi  -->
+    <link rel="stylesheet" href="./recapitulareCSS.css"> <!-- introducem fisierul de stilizare CSS-->
+
+    <!--  ---------------------------------------------------------------------------------  -->
+    <!--  stilizarea CSS prin tagul style, in head ul paginii html  -->
+    <style>
+    #page-title {
+        color: black;
+    }
+
+    </style>
+    <!--  ---------------------------------------------------------------------------------  -->
+
+</head>
+
+<body>
+
+    <header>  <!-- HTML SEMANTIC-->
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Produts</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <h1 id="page-title"> LOTTO 6 FROM 49</h1>
+    <h5>The Game Of The Brave</h5>
+    <hr>
+
+    <!-- commentated text -->
+    <p> Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit.
+        Accusantium aliquid cum cumque, esse, et fugiat fugit in maiores molestias odit
+        pariatur quae quas qui quis quo sit unde velit voluptatibus!
+        Cine vrea sa castige trebuie sa joace</p>
+    <a href="https://google.com"></a>
+    <a href="https:// google.com" target="_blank"></a>
+    <img src="https://www.google.ro/url?sa=i&url=https%3A%2F%2Fm.facebook.com%2FOnline-LOTTO-101921672049507%2F%3Fref%3Dnf%26hc_ref%3DARRmWneIcoIHpUzpiKVjR6itycjmztOi9UjOFdtjTYpgEf5PDV-0JrgQlqMypZ5fmyA&psig=AOvVaw2s75nkPfWB1Oh-eoM0Q8cH&ust=1649925498173000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCJj2udDRkPcCFQAAAAAdAAAAABAD"
+         alt="alternative text, wich apper on site when the image haa been not loaded">
+
+    <ul> <!-- unordered list-->
+        <li>Coloana 1</li>
+        <li>Coloana 2</li>
+        <li>Coloana 3</li>
+        <li>Coloana 4 ce contine un Ol
+            <ol>
+                <li><a href="https://google.com"></a></li>
+                <li><a href="https://mozila.com"></a></li>
+                <li><a href="https://safari.com"></a></li>
+            </ol>
+        </li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <table border="1" bgcolor="aqua" style="color: #a52a2a">
+        <thead>
+        <tr>
+            <td rowspan="2" colspan="1">User</td>
+            <td colspan="1">Extracted Numbers</td>
+            <td rowspan="2">User Numbers</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Marcel Pana</td>
+            <td>3,23,44,28,36,22</td>
+            <td>24,12,36,23,41,14</td>
+        </tr>
+        <tr>
+            <td>not available</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>nn</td>
+        </tr>
+        </tbody>
+    </table>
+    <hr>
+    <ol> <!-- ordered list-->
+        <li>Coloana 1</li>
+        <li>Coloana 2</li>
+        <li>Coloana 3</li>
+    </ol>
+    <img src="https://www.google.ro/url?sa=i&url=https%3A%2F%2Fwww.wikiwand.com%2Fro%2FLamborghini_Si%25C3%25A1n_FKP_37&psig=AOvVaw2mURtEnFuawtq5H3NwxMOA&ust=1649936549716000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCLC9xuH6kPcCFQAAAAAdAAAAABAH"
+         style="max-width: 300px"
+         alt="car picture Lamborghini">
+    <div class="header"> class="header" <!-- atasam atributul class cu numele header -->
+        <a href=""></a>
+        <p></p>
+    </div>
+    <div id="footer"></div> <!-- atasam atributul iD cu numele footer -->
+    <br>
+    <br>
+    <form action="index.html" method="get"> <!-- formular de cules date de la utilizator -->
+        <label for="lastName">Enter second name: </label>
+        <input type="text" name="lastName" id="lastName"><!-- input este self closing tag -->
+        <hr>
+        <lebel for="firstName">Enter first name:</lebel><!-- in for avem valoare ce o ia din id -->
+        <input required type="text" name="firstname" id="firstname"><!-- user u l introduce numele sub forma de text -->
+        <hr>
+        <label for="firstname">Enter message</label>
+        <textarea name="firstname" id="firstname2" cols="30" rows="10"></textarea>
+        <input type="submit" value="Submit">
+        <br>
+        <div>
+            <label for="age">Age (formular de tip number)</label>
+            <!-- formular de tip number unde putem introduce decat numere  -->
+            <input type="number" name="age" id="age">
+        </div>
+        <br>
+
+        <lebel for="e-mail">Enter your email</lebel>
+        <input type="email" name="e-mail" id="e-mail" placeholder="Ex: something@yahoo.com" required>
+
+        <br>
+        <!-- radio buttons-->
+        <lebel for="gender">Gender ( radio type buttons form )</lebel>
+        <ul>
+            <input type="radio" value="male" name="gender" id="gender">Male
+            <br>
+            <input type="radio" value="female" name="gender" id="gende">Female
+            <br>
+            <input type="radio" value="other" name="gender" id="gendr">Other
+        </ul>
+        <div>
+            <!-- pickList-->
+            <lebel for="country">Country (DropDownSelectList)</lebel>
+            <select name="country" id="country">
+                <option value=""></option>
+                <option value="RO">Romania</option>
+                <option value="USA">America</option>
+                <option value="DE">Germany</option>
+                <option value="N/A">Not Available</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="status">Statut ( formular tip bifa)</label>
+            <input type="checkbox" name="status" id="status">
+            <br>
+            <label for="working">Working? ( formular tip bifa)</label>
+            <input type="checkbox" name="working" id="working">
+        </div>
+        <br>
+        <hr>
+        <div>
+            <lebel for="birth-date">Birth date</lebel>
+            <input type="date" name="bDate" id="birth-date">
+        </div>
+        <hr color="blue">
+        <div>
+            <label for="descriere">Description ( formular tip text )</label>
+            <textarea name="description" id="descriere" cols="30" rows="10" style="resize: none"></textarea>
+        </div>
+        <hr>
+        <div>
+            <label for="uploadSomething">Upload Document</label>
+            <input type="file" name="upload" id="uploadSomething">
+        </div>
+        <hr color="red" size="5px">
+        <div>
+            <label for="numbersRange">Numbers Range</label>
+            <span>0</span>
+            <input type="range" name="nrRange" id="numbersRange" min="10" max="30">
+            <span>50</span>
+        </div>
+        <hr>
+        <input type="submit" name="" value="Save" id="submit">
+    </form>
+
+    <hr>
+
+    <form action="">
+        <lebel for="username">Username</lebel>
+        <input type="text" name="username" id="username" required>
+        <hr>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required>
+        <hr>
+        <input type="submit" value="Login" name="" id="login">
+        <input type="reset" value="Reset" id="reset">
+        <br> <br>
+    </form>
+</body>
+</html>

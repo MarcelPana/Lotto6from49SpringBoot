@@ -1,0 +1,39 @@
+<a href="http://localhost:4200/home">Back home</a>
+
+<h1>Users</h1>
+
+<form id="add-user">
+  <label id="add-user-label">Add user</label>
+  <br>
+  <div>
+  <label>First name</label>
+  <input id="firstName" type="text" [(ngModel)]="firstName">
+  <h1>{{firstName}}</h1>
+  </div>
+  <div>
+  <label>Second name</label>
+  <input id="secondName" type="text" [(ngModel)]="secondName">
+  <h1>{{secondName}}</h1>
+  </div>
+  <div>
+  <label>Age</label>
+  <input id="age" type="number" [(ngModel)]="age">
+  <h1>{{age}}</h1>
+  </div>
+  <div>
+  <label>email</label>
+  <input id="email" type="email" [(ngModel)]="email">
+  <h1>{{email}}</h1>
+  </div>
+  <div>
+  <label>City</label>
+  <input id="city" type="text" [(ngModel)]="city">
+  <h1>{{city}}</h1>
+  </div>
+  <div>
+  <label>Country</label>
+  <input id="country" type="text" [(ngModel)]="country">
+  <h1>{{country}}</h1>
+  </div>
+</form>
+<button (click)="saveUser()">Save user</button>

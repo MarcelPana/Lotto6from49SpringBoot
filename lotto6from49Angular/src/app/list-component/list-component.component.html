@@ -1,0 +1,16 @@
+<a href="http://localhost:4200/home">Back home</a>
+ <p>list-component works!</p>
+
+<img [src]="urlToimagne" [alt]="altForImagine">    <!-- data binding [ ]-->
+
+<ul>
+  <li *ngFor="let item of list">{{item}}</li>
+</ul>
+
+ <ul>
+   <li *ngFor="let itemNou of list">{{itemNou}}
+     <button (click)="clickUtilizator(itemNou)"></button>     <!-- one way data binding ( )-->
+   </li>
+ </ul>
+
+ <app-post [listOfPostsFromService]="postList" (usrClickedOnPost)="handelclickfromchild($event)" ></app-post>

@@ -47,8 +47,8 @@ public class LottoGameLogic extends Thread{
             ArrayList<Integer> userNumbers = new ArrayList<>(6);
             do {
                 try {
-                    //chosenNumber = sc.nextInt();
-                    chosenNumber = (int) (Math.random() * 49) + 1;
+                    chosenNumber = sc.nextInt();
+                    //chosenNumber = (int) (Math.random() * 49) + 1;
                     if ((chosenNumber < 1) || (chosenNumber > 49)) {
                         System.out.print("Between 1 " + "and 49, please! Try again: ");
                     } else if (!userNumbers.contains(chosenNumber)) {
@@ -71,7 +71,7 @@ public class LottoGameLogic extends Thread{
                 if (!luckyNumbers.contains(number))
                     luckyNumbers.add(number);
                 try {
-                    Thread.sleep(1000);
+                    Thread.sleep(2000);
                 } catch (InterruptedException ignored) {
                 }
                 System.out.println("The lucky numbers are: " + luckyNumbers);

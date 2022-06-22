@@ -1,0 +1,52 @@
+
+
+#page-title{
+    color: white;
+    width: 300px;
+    height: 35px;
+    background-color: red;
+    position: relative;
+    left: 220px;
+ padding-left: 20px;
+    animation-name: example;
+    animation-duration: 6s;
+}
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:1000px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+#the_brave_title {
+    position: absolute;
+    left: 290px;
+    top: 35px;
+    background-color: deepskyblue;
+    padding: 2px;
+
+}
+
+#the_brave_title:hover{
+    padding: 10px;
+}
+body{
+    background-color: blanchedalmond;
+}
+
+#gina-virgina{ /* de sters */
+    position: relative;
+    margin-left: 300px;
+    margin-top: 100px;
+    color: red;
+}
+#add-pamnaram{
+    position: relative;
+    margin-left: 300px;
+}
+
+#add-number{
+    position: relative;
+    margin-left: 300px;
+}

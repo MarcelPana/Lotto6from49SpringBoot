@@ -1,0 +1,38 @@
+#header{
+  background-color: #dddddd;
+  margin: 0px;
+  height: 300px;
+}
+h1 {
+  color: red;
+  margin-left: 350px;
+  font-size: 200px;
+  margin-right: 280px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.span-title{
+ color: orangered;
+}
+
+h3 {
+  color: red;
+  margin: 0px;
+  margin-left: 500px;
+  font-size: 50px;
+  margin-right: 500px;
+}
+h3:hover{
+  color: goldenrod
+}
+
+#ball-picture{
+  height:200px;
+  width: 450px;
+  margin-left: 1050px;
+  position: absolute;
+  border: solid;
+  border-width: 5px;
+  margin-right: 50px;
+}

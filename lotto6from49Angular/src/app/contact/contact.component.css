@@ -1,0 +1,11 @@
+h1{
+  color: darkgoldenrod;
+}
+
+.form-group{
+  padding:10px;
+  display:block;
+  width:40%;
+  margin:10px
+
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:color="http://www.w3.org/1999/xhtml" xmlns:margin-top="http://www.w3.org/1999/xhtml"
+      xmlns:margin-left="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        * {
+            box-sizing: content-box;
+            padding-left: 1px;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the side navigation */
+        .sidenav {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: blue;
+            overflow-x: hidden;
+
+        }
+
+
+        /* Side navigation links */
+        .sidenav a {
+            color: white;
+            padding: 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color on hover */
+        .sidenav a:hover {
+            background-color: #ddd;
+            color: red;
+            font-style: italic;
+        }
+        
+        :focus{
+            padding: 10px;
+            color: black;
+        }
+
+        /* Style the content */
+        .content {
+            margin-left: 200px;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>  <!-- HTML SEMANTIC-->
+    <nav class="sidenav">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="extracted_numbers.html">Extractions</a>
+        <a href="extracted_numbers.html">Users</a>
+        <a href="contact_page.html">Contact</a>
+    </nav>
+</header>
+
+<h1 id="page-title"> LOTTO 6 FROM 49</h1>
+<h4 id="the_brave_title">The Game Of The Brave</h4>
+<hr color="red" size="5px">
+
+// de sters
+
+<ul id="gina-virgina">
+    <li id="TT" color="blanchedalmond">scris in html</li>
+</ul>
+
+// de sters
+
+<form action="" id="add-pamnaram" >
+    <label for="panaram-name">Panaram Name      </label>
+    <input type="text" id="panaram-name">
+    <br>
+    <br>
+    <label for="panaram-surename">Panaram surename</label>
+    <input type="text" id="panaram-surename">
+</form>
+<button onclick="addNumber()" id="add-number" color:="blue" >
+    Add new number
+</button>
+
+<script src="./home.js"></script>
+</body>
+
+
+</html>

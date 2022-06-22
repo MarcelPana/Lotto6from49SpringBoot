@@ -1,0 +1,37 @@
+
+body{
+    padding: 50px; /* setam distanta din stanga paginii html in browser pentru body */
+}
+
+#gender{
+    background-color: orange;
+    color: red;
+    size: A5;
+}
+
+#reset{
+    background-color: red;
+}
+
+#page-title {
+    color: white;
+    padding: 30px;
+    width: 300px;
+    height: 30px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 6s;
+}
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:1000px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+ul {
+    color: orange;
+    font-family: "Copperplate Gothic Bold", fantasy
+}

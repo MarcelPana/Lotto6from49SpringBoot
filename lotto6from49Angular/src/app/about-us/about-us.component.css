@@ -1,0 +1,12 @@
+
+p {
+  background-color: navajowhite;
+  color: red;
+  padding: 200px;
+  padding-top: 50px;
+}
+body {
+  background-color: lightblue;
+  color: darkblue;
+  font-size: 18px;
+}
