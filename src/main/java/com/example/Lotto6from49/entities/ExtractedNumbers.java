@@ -13,6 +13,7 @@ import java.util.List;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
+@Embeddable
 public class ExtractedNumbers {
 
     @Id

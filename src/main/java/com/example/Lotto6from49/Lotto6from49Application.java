@@ -1,33 +1,26 @@
 package com.example.Lotto6from49;
 
-import com.example.Lotto6from49.entities.Lotto6From49;
+import com.example.Lotto6from49.serviceImpl.FileCrudManagement;
+import com.example.Lotto6from49.serviceImpl.LottoGameLogic;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 import java.io.*;
-import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.Arrays;
-
-import static com.example.Lotto6from49.entities.Lotto6From49.creatingFile;
 
 @SpringBootApplication
 public class Lotto6from49Application {
 
     public static void main(String[] args) throws IOException { SpringApplication.run(Lotto6from49Application.class, args);
 
-        creatingFile();
-        Lotto6From49.addUser();
-        Lotto6From49.readingUsers();
-        Lotto6From49.playARound();
-
+        FileCrudManagement.creatingFile();
+        FileCrudManagement.addUser();
+        FileCrudManagement.readingUsers();
+        LottoGameLogic.playARound();
     }
-
-
-
-
-
-
 }
 
 

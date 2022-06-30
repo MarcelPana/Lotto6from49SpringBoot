@@ -1,0 +1,12 @@
+
+<router-outlet></router-outlet>
+spring.data.rest.base-path=/api
+<dependency>
+			<groupId>com.stripe</groupId>
+			<artifactId>stripe-java</artifactId>
+			<version>20.80.0</version>
+		</dependency>
+
+@Repository
+
+spring.data.rest.base-path=/api

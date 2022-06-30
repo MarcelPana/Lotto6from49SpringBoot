@@ -1,13 +1,13 @@
 package com.example.Lotto6from49.conrollers;
-
 import com.example.Lotto6from49.entities.ExtractedNumbers;
 import com.example.Lotto6from49.service.ExtractedNumbersService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 import java.util.Optional;
+
+@CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping("/api")
 @RestController
 public class ExtractedNumbersController {
