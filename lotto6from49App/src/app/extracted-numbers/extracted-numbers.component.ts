@@ -8,7 +8,7 @@ class ExtractedNumbersServiceService {
 
 @Component({
   selector: 'app-extracted-numbers',
-  templateUrl: './extracted-numbers.component.html',
+   templateUrl: './extracted-numbers.component.html',
   styleUrls: ['./extracted-numbers.component.css']
 })
 export class ExtractedNumbersComponent implements OnInit {
@@ -20,7 +20,7 @@ export class ExtractedNumbersComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.extractedNumbersList();
+   // this.extractedNumbersList();
   }
 
   extractedNumbersList() {
@@ -30,6 +30,7 @@ export class ExtractedNumbersComponent implements OnInit {
       }
     )
   }
+
 }
 
 

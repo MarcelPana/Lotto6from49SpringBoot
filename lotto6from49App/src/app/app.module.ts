@@ -6,12 +6,14 @@ import { ExtractedNumbersComponent } from './extracted-numbers/extracted-numbers
 import { TralalalComponent } from './components/tralalal/tralalal.component';
 import {ExtractedNumbersService} from "../service/extracted-numbers.service";
 import {HttpClientModule} from "@angular/common/http";
+import { DeJoacaComponent } from './de-joaca/de-joaca.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TralalalComponent,
-    ExtractedNumbersComponent
+    ExtractedNumbersComponent,
+    DeJoacaComponent
   ],
   imports: [
     HttpClientModule,
