@@ -20,7 +20,7 @@ export class ExtractedNumbersComponent implements OnInit {
   }
 
   ngOnInit() {
-   // this.extractedNumbersList();
+    this.extractedNumbersList();
   }
 
   extractedNumbersList() {

@@ -1,10 +1,127 @@
-<div class="container-fluid text-center bg-danger bg-opacity-80">
-  <p class=" fs-1 fw-bolder text-white" >LOTTO 6/49</p>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<div class="container-fluid text-start bg-danger bg-opacity-80">
+  <a href="http://localhost:4200/home"><img style="margin-left: 40px"src="./assets/pictures/logo.jpg" alt=""></a>
+  <span class="fw-bolder  text-white display-1 " style="margin-left: 40px" >LOTTO 6/49</span>
+
+  <img style="margin-left:400px"src="./assets/pictures/bile lotto.jpg" alt="">
 </div>
-<app-de-joaca></app-de-joaca>
+
+
+
+<div class="m-4">
+
+  <ul class="nav nav-tabs mt-5">
+    <li class="nav-item">
+      <a href="http://localhost:4200/home" class="nav-link ">Home</a>
+    </li>
+    <li class="nav-item">
+      <a href="http://localhost:4200/home" class="nav-link ">Play now</a>
+    </li>
+    <li class="nav-item">
+      <a href="http://localhost:4200/extracted-numbers" class="nav-link ">Extractions</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Reports</a>
+      <div class="dropdown-menu">
+        <a href="#" class="dropdown-item">Playing history</a>
+        <a href="#" class="dropdown-item">Wining history</a>
+        <a href="#" class="dropdown-item">Most played numbers</a>
+        <a href="#" class="dropdown-item">Most extracted numbers</a>
+        <a href="#" class="dropdown-item">Sent Items</a>
+        <div class="dropdown-divider"></div>
+        <a href="#" class="dropdown-item">Trash</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a href="http://localhost:4200/home" class="nav-link ">About us</a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link">Tips</a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link">News</a>
+    </li>
+    <li class="nav-item">
+      <a href="http://localhost:4200/home" class="nav-link ">Contact us</a>
+    </li>
+    <li class="nav-item">
+      <a href="http://localhost:4200/home" class="nav-link ">Help</a>
+    </li>
+
+
+    <li class="nav-item dropdown ms-auto">
+      <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Admin</a>
+      <div class="dropdown-menu dropdown-menu-end">
+        <a href="#" class="dropdown-item">Reports</a>
+        <a href="#" class="dropdown-item">Settings</a>
+        <div class="dropdown-divider"></div>
+        <a href="#" class="dropdown-item">Logout</a>
+      </div>
+    </li>
+  </ul>
+</div>
+<router-outlet></router-outlet>
+<!--
+<footer>
+  <div class=" container-fluid  align-bottom text-center w-100 p-3 border-3 " style="background-color: burlywood;">
+    <ul>
+      <p>Site design / logo © 2022 Marcel Pana; user licensed contributions </p>
+    </ul>
+  </div>
+</footer>
+-->
+</body>
+</html>
+
+
+
+
 
 <!--
+<app-de-joaca></app-de-joaca>
+<app-home></app-home>
+
+
 <app-extracted-numbers></app-extracted-numbers>
 <router-outlet></router-outlet>
+
+dropdown menu
+<li class="nav-item dropdown">
+      <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Home</a>
+      <div class="dropdown-menu">
+        <a href="#" class="dropdown-item">Inbox</a>
+        <a href="#" class="dropdown-item">Drafts</a>
+        <a href="#" class="dropdown-item">Sent Items</a>
+        <div class="dropdown-divider"></div>
+        <a href="#" class="dropdown-item">Trash</a>
+      </div>
+    </li>
+
+      <li class="nav-item dropdown">
+      <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Messages</a>
+      <div class="dropdown-menu">
+        <a href="#" class="dropdown-item">Inbox</a>
+        <a href="#" class="dropdown-item">Drafts</a>
+        <a href="#" class="dropdown-item">Sent Items</a>
+        <div class="dropdown-divider"></div>
+        <a href="#" class="dropdown-item">Trash</a>
+      </div>
+    </li>
+
+
+
+    <li class="nav-item">
+      <a href="http://localhost:4200/home" class="nav-link active">Home</a>
+    </li>
 -->
 

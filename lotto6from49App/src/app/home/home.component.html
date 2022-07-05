@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lotto</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+
+    <h2 class="text-center co">Welcome to our homepage</h2>
+    <!-- Slide Show -->
+    <section>
+      <img class="mySlides" src="./assets/pictures/bilet1.jpg"  alt="dsfghj"   style="width:20%"   >
+      <img class="mySlides" src="./assets/pictures/Loto-6-din-49-tragerea-de-duminica.webp" style="width:20%">
+      <img class="mySlides" src="./assets/pictures/Rezultate-LOTO-6-din-49-Joker-si-Noroc.jpg" style="width:20%">
+    </section>
+
+<script>
+  // Automatic Slideshow - change image every 3 seconds
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+  }
+</script>
+
+
+</body>
+</html>
+

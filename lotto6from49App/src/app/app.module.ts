@@ -7,18 +7,24 @@ import { TralalalComponent } from './components/tralalal/tralalal.component';
 import {ExtractedNumbersService} from "../service/extracted-numbers.service";
 import {HttpClientModule} from "@angular/common/http";
 import { DeJoacaComponent } from './de-joaca/de-joaca.component';
+import { HomeComponent } from './home/home.component';
+import {RouterModule} from "@angular/router";
 
 @NgModule({
   declarations: [
     AppComponent,
     TralalalComponent,
     ExtractedNumbersComponent,
-    DeJoacaComponent
+    DeJoacaComponent,
+    HomeComponent
   ],
+
   imports: [
     HttpClientModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
+
   ],
   providers: [ExtractedNumbersService],
   bootstrap: [AppComponent]
