@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {ExtractedNumbers} from "../../entities/extracted-numbers";
-import {ExtractedNumbersService} from "../../service/extracted-numbers.service";
+import {ExtractedNumbers} from "../../../entities/extracted-numbers";
+import {ExtractedNumbersService} from "../../../service/extracted-numbers.service";
 
 
 class ExtractedNumbersServiceService {

@@ -9,15 +9,17 @@ public class Users {
     public Users() {
     }
 
-    public Users(String firstName, String secondName, Integer age, String email, String city, String country, String password) {
+    public Users(String firstName, String secondName, Integer age, String email, String city, String country, Boolean isAdult) {
         this.firstName = firstName;
         this.secondName = secondName;
         this.age = age;
         this.email = email;
         this.city = city;
         this.country = country;
-        this.password = password;
+        this.isAdult = isAdult;
+
     }
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -36,15 +38,8 @@ public class Users {
     @Column
     private String country;
     @Column
-    private String password;
+    private Boolean isAdult;
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
 
     public String getFirstName() {
         return firstName;
@@ -92,5 +87,13 @@ public class Users {
 
     public void setCountry(String country) {
         this.country = country;
+    }
+
+    public Boolean getAdult() {
+        return isAdult;
+    }
+
+    public void setAdult(Boolean adult) {
+        isAdult = adult;
     }
 }
