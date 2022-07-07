@@ -40,6 +40,13 @@ public class Users {
     @Column
     private Boolean isAdult;
 
+    public Integer getUsersId() {
+        return usersId;
+    }
+
+    public void setUsersId(Integer usersId) {
+        this.usersId = usersId;
+    }
 
     public String getFirstName() {
         return firstName;

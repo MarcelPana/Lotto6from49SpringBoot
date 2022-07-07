@@ -35,6 +35,9 @@ public class UsersController {
             usersFromDatabase.get().setSecondName(users.getSecondName());
             usersFromDatabase.get().setAge(users.getAge());
             usersFromDatabase.get().setEmail(users.getEmail());
+            usersFromDatabase.get().setCity(users.getCity());
+            usersFromDatabase.get().setCountry(users.getCountry());
+            usersFromDatabase.get().setAdult(users.getAdult());
             final Users updateUsers = usersService.addUser(usersFromDatabase.get());
             return updateUsers;
         }
