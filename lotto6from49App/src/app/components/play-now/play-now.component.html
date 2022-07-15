@@ -10,70 +10,34 @@
 <body>
 
 <!---->
-<form style="padding-left: 50px" class="needs-validation" novalidate>
-  <div class="form-row">
-    <div class="col-md-4 mb-3">
-      <label for="validationCustom01">First name</label>
-      <input type="text" class="form-control" id="validationCustom01" placeholder="First name"  required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
-    </div>
-    <div class="col-md-4 mb-3">
-      <label for="validationCustom02">Last name</label>
-      <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
-    </div>
-    <div class="col-md-1 mb-1 " >
-      <label  for="validationCustom02">Age</label>
-      <input  type="number" class="form-control" id="age" placeholder="Age" required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
-    </div>
-    <div class="col-md-4 mb-3">
-      <label for="validationCustom02">Email</label>
-      <input type="email" class="form-control" id="email" placeholder="example@yahoo.com" required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="col-md-6 mb-3">
-      <label for="validationCustom03">City</label>
-      <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
-      <div class="invalid-feedback">
-        Please provide a valid city.
-      </div>
-    </div>
-    <div class="col-md-3 mb-3">
-      <label for="validationCustom04">State</label>
-      <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
-      <div class="invalid-feedback">
-        Please provide a valid state.
-      </div>
-    </div>
+<h6 style="margin-left: 50px"> <a href="http://localhost:4200/app-login-page">You have to login first! </a> or <a href="http://localhost:4200/app-user-registration"> Create an account</a> </h6>
 
-  </div>
-  <div style="padding-bottom: 20px" class="form-group">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-      <label class="form-check-label" for="invalidCheck">
-        I'm over 18 years
-      </label>
-      <div class="invalid-feedback">
-        You must agree before submitting.
-      </div>
-    </div>
-  </div>
+<div >
+  <form action="" style="text-align: center; margin-top: 30px">
+    <label class="text-bg-primary"  style=" margin-right: 30px;padding-right: 10px; padding-left: 10px" for="firstNumber"> Insert your lucky numbers please!</label>
+    <input class="text-center border border-3" style="border-radius: 30px" type="number" id="firstNumber" name="quantity" min="1" max="49" placeholder="0">
+    <span>  .. </span>
+    <input class="text-center border border-3" style="border-radius: 30px"type="number" id="secondNumber" name="quantity" min="1" max="49" placeholder="0">
+    <span>  .. </span>
+    <input class="text-center border border-3" style="border-radius: 30px"type="number" id="thirdNumber" name="quantity" min="1" max="49" placeholder="0">
+    <span>  .. </span>
+    <input class="text-center border border-3" style="border-radius: 30px"type="number" id="forthNumber" name="quantity" min="1" max="49" placeholder="0">
+    <span>  .. </span>
+    <input class="text-center border border-3" style="border-radius: 30px" type="number" id="fifthNumber" name="quantity" min="1" max="49" placeholder="0">
+    <span>  .. </span>
+    <input class="text-center border border-3" style="border-radius: 30px" type="number" id="sixthNumber" name="quantity" min="1" max="49" placeholder="0">
+    <span>  .. </span>
+    <input type="submit" >
+  </form>
+</div>
+<div style="text-align: center; margin-top: 30px">
+  <img id="object1"
+       src=
+         "./assets/pictures/img.png" />
+</div>
 
-    <button  class="btn btn-primary" type="submit"  (click)="submitForm()">
-      <a style="color: aliceblue" href="http://localhost:4200/app-choose-numbers">Submit form and go to choose the numbers</a>
-    </button>
-</form>
+
+
 <!--
 <script>
   // Example starter JavaScript for disabling form submissions if there are invalid fields

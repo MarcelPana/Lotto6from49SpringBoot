@@ -12,6 +12,8 @@ import {RouterModule} from "@angular/router";
 import { PlayNowComponent } from './components/play-now/play-now.component';
 import { ChooseNumbersComponent } from './components/choose-numbers/choose-numbers.component';
 import { UsersListComponent } from './components/users-list/users-list.component';
+import { UserRegistrationComponent } from './components/user-registration/user-registration.component';
+import { LoginPageComponent } from './components/login-page/login-page.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { UsersListComponent } from './components/users-list/users-list.component
     HomeComponent,
     PlayNowComponent,
     ChooseNumbersComponent,
-    UsersListComponent
+    UsersListComponent,
+    UserRegistrationComponent,
+    LoginPageComponent
   ],
 
   imports: [

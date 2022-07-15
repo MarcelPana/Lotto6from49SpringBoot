@@ -6,9 +6,14 @@ import {HomeComponent} from "./components/home/home.component";
 import {PlayNowComponent} from "./components/play-now/play-now.component";
 import {ChooseNumbersComponent} from "./components/choose-numbers/choose-numbers.component";
 import {UsersListComponent} from "./components/users-list/users-list.component";
+import {LoginPageComponent} from "./components/login-page/login-page.component";
+import {UserRegistrationComponent} from "./components/user-registration/user-registration.component";
 
 
 const routes: Routes = [
+
+  { path: 'app-user-registration', component: UserRegistrationComponent},
+  { path: 'app-login-page', component: LoginPageComponent},
   { path: 'app-users-list', component: UsersListComponent},
   { path: 'app-choose-numbers', component: ChooseNumbersComponent},
   { path: 'app-play-now', component: PlayNowComponent},

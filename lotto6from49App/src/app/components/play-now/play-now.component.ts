@@ -15,10 +15,6 @@ export class PlayNowComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  submitForm(){
-    alert("somebody clicked")
-  }
-
 
 
 
