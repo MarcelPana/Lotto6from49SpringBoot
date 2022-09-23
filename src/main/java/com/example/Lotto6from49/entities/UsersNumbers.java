@@ -10,10 +10,7 @@ import java.sql.Date;
 @Data
 @Table
 @Entity
-@AllArgsConstructor
-@NoArgsConstructor
 public class UsersNumbers {
-
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

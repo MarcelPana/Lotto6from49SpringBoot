@@ -2,6 +2,7 @@ package com.example.Lotto6from49.entities;
 import javax.persistence.*;
 
 
+
 @Table
 @Entity
 public class Users {

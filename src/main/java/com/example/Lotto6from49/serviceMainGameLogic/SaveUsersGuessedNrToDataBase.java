@@ -1,26 +1,23 @@
-package com.example.Lotto6from49.serviceImpl;
+package com.example.Lotto6from49.serviceMainGameLogic;
 
-import com.example.Lotto6from49.entities.ExtractedNumbers;
 import com.example.Lotto6from49.entities.UsersGuessedNumbers;
 import com.example.Lotto6from49.repositories.UsersGuessedNumbersRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 @Service
-public class AddUsersGuessedNrToDataBase {
-
+public class SaveUsersGuessedNrToDataBase {
 
     private final UsersGuessedNumbersRepository usersGuessedNumbersRepository;
 
     @Autowired
-    public AddUsersGuessedNrToDataBase(UsersGuessedNumbersRepository usersGuessedNumbersRepository) {
+    public SaveUsersGuessedNrToDataBase(UsersGuessedNumbersRepository usersGuessedNumbersRepository) {
         this.usersGuessedNumbersRepository = usersGuessedNumbersRepository;
     }
 
     // Save users guessed numbers into Database
     public UsersGuessedNumbers addGuessedNr(UsersGuessedNumbers usersGuessedNumbers) {
-        System.out.println("Database " + usersGuessedNumbers);
+        System.out.println("Saved Into Database " + usersGuessedNumbers);
         usersGuessedNumbersRepository.save(usersGuessedNumbers);
         return usersGuessedNumbers;
     }

@@ -1,18 +1,15 @@
-package com.example.Lotto6from49.serviceImpl;
-
+package com.example.Lotto6from49.serviceMainGameLogic;
 import com.example.Lotto6from49.entities.ExtractedNumbers;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import java.io.File;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-@EqualsAndHashCode(callSuper = true)
-@Data
+
 @Service
 public class LottoGameLogic extends Thread{
 
@@ -22,28 +19,27 @@ public class LottoGameLogic extends Thread{
     static String path = "C:\\Users\\Acasa\\0 SDA\\0 Proiecte practice\\Lotto6from49\\players";
     static File players = new File(path);
     static DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MMM-YYYY; hh:mm;");
-    public static String timeNow = LocalDateTime.now().format(formatter);
+    static String timeNow = LocalDateTime.now().format(formatter);
     static String user;
     static ArrayList<Integer> guessedNumbers = new ArrayList<>();
-    public static ArrayList<Integer> luckyNumbers = new ArrayList<>(6);
+    static ArrayList<Integer> luckyNumbers = new ArrayList<>(6);
 
-    private static AddExtractedNrToDataBase addToDataBase = null;
+    private static SaveExtractedNrToDataBase addToDataBase = null;
 
     @Autowired
-    public LottoGameLogic(AddExtractedNrToDataBase addToDataBase) {
+    public LottoGameLogic(SaveExtractedNrToDataBase addToDataBase) {
         LottoGameLogic.addToDataBase = addToDataBase;
     }
 
-
     //Game play round
     public static void playARound() {
-        System.out.println("Let's play!");
+        System.out.println("Let's play" + " " + LottoGameLogic.user + "!");
         do {
             boolean validInput;
             String answer;
 
 // Get the user's numbers
-            System.out.println("Choose a number please!");
+            System.out.println(LottoGameLogic.user + " " + "choose a number please!");
             ArrayList<Integer> userNumbers = new ArrayList<>(6);
             do {
                 try {
@@ -53,7 +49,7 @@ public class LottoGameLogic extends Thread{
                         System.out.print("Between 1 " + "and 49, please! Try again: ");
                     } else if (!userNumbers.contains(chosenNumber)) {
                         userNumbers.add(chosenNumber);
-                        System.out.println("Your chosen numbers are: " + userNumbers);
+                        System.out.println(LottoGameLogic.user + " " + "your chosen numbers are: " + userNumbers);
                     }
                 } catch (Exception e) {
                     sc.next();
@@ -63,9 +59,9 @@ public class LottoGameLogic extends Thread{
             System.out.println();
             System.out.println();
 
-// The lucky 6 random numbers
+// The 6 random lucky numbers
             System.out.println("And now, let's see the lucky numbers");
-            //ArrayList<Integer> luckyNumbers = new ArrayList<>(6);
+            ArrayList<Integer> luckyNumbers = new ArrayList<>(6);
             do {
                 int number = (int) (Math.random() * 49) + 1;
                 if (!luckyNumbers.contains(number))
@@ -78,6 +74,7 @@ public class LottoGameLogic extends Thread{
             } while (luckyNumbers.size() < 6);
 
 // Check the numbers
+
             System.out.println();
             System.out.println();
 
@@ -89,7 +86,7 @@ public class LottoGameLogic extends Thread{
                 }
             }
 
-            System.out.println("Your chosen numbers are: " + userNumbers);
+            System.out.println(LottoGameLogic.user + " " + "your chosen numbers are: " + userNumbers);
             System.out.println("The lucky numbers are:   " + luckyNumbers);
             System.out.println("The guessed numbers are: " + guessedNumbers);
             System.out.println(user + " Today " + timeNow + " You have shot " + guessedNumbers.size() + " numbers");
@@ -101,7 +98,7 @@ public class LottoGameLogic extends Thread{
 
 // Play again?
             do {
-                System.out.print("\nPlay again? (Y or N)");
+                System.out.print( LottoGameLogic.user + "" + " would you like to try again? (Y or N)");
                 answer = sc.next();
                 validInput = true;
                 if (answer.equalsIgnoreCase("Y")) ;

@@ -1,12 +1,14 @@
 package com.example.Lotto6from49.entities;
 
 
+import lombok.Data;
+
 import javax.persistence.*;
 import java.sql.Date;
 
 @Entity
 @Table
-
+@Data
 public class UsersGuessedNumbers {
 
     @Id
